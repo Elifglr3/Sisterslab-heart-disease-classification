@@ -1,37 +1,52 @@
 # Sisterslab-heart-disease-classification
-Sisterslab Yapay Zeka Akademisi Bitirme Prpjesi
-Veri Seti https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
-Problem Türü: Sınıflandırma 
-Amaç: Kişinin kalp hastalığı riski taşıyıp taşımadığını tahmin etmek
 
-Proje Ödevi 
-Adım Adım Görevler:
-1. Problem Tanımı 
-● Hangi veri seti seçildi? 
-● Problemin amacı nedir? Hedef değişken ne?
-2. Veri Analizi ve Görselleştirme (EDA) 
-● df.info(), df.describe() çıktıları 
-● Eksik veri kontrolü 
-● Hedef değişkenin dağılımı 
-● En az 3 görsel: Korelasyonlar, dağılımlar veya kategorik etkileşimler 
-3. Veri Ön İşleme 
-● Gerekli encoding işlemleri (LabelEncoder, OneHotEncoder) 
-● Sayısal veriler için gerekirse StandardScaler / MinMaxScaler 
-● Eğitim/test ayrımı (train_test_split, 70-30 ya da 80-20)
-4B. Eğer Heart Disease UCI seçildiyse (Sınıflandırma): 
-● Hedef değişken: target (1 = kalp hastalığı var, 0 = yok) 
-● En az iki sınıflandırma modeli kurun: 
-● Logistic Regression 
-● Random Forest veya KNN/SVM gibi alternatif model 
-● Başarı metrikleri: 
-● Accuracy, Precision, Recall, F1-Score 
-● Confusion Matrix 
-● ROC-AUC eğrisi
-5. Model Karşılaştırması 
-● Hangi model daha iyi performans verdi? 
-● Hangi metrik üzerinde öne çıktı? 
-● Aşırı öğrenme veya yetersiz öğrenme gözlendi mi?
-6. Sonuç ve Yorumlar 
-● Modelin pratik kullanımı hakkında değerlendirme 
-● Daha iyi sonuçlar için neler yapılabilir? 
-● Veri setiyle ilgili gözlemler
+Bu proje, Sisterslab Yapay Zeka Akademisi Bitirme Projesi kapsamında gerçekleştirilmiştir. Amaç, bir bireyin kalp hastalığı riski taşıyıp taşımadığını çeşitli sağlık parametrelerine göre sınıflandırmaktır.
+
+
+- **Veri Seti:** [Heart Disease Data - Kaggle](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data)
+- **Problem Türü:** Sınıflandırma
+- **Hedef Değişken:** `target` (1: kalp hastalığı var, 0: yok)
+
+
+##  Kullanılan Modeller
+
+- Logistic Regression
+- Random Forest
+- KNN
+- SVM
+- Gradient Boosting
+- XGBoost
+- CatBoost
+
+##  Kullanılan Metrikler
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
+- Confusion Matrix
+
+##  Kurulum ve Çalıştırma
+
+1. Gerekli kütüphaneleri yükleyin:
+```bash
+pip install -r requirements.txt
+```
+
+2. Ana Jupyter Notebook'u çalıştırın:
+```bash
+jupyter notebook notebooks/heart_disease_classification_final.ipynb
+```
+
+##  Sonuçlar
+
+- En iyi performans: Gradient Boosting (%85 Accuracy)
+- Aykırı değer analizi, dengesiz sınıflar, medikal doğruluk gibi konular dikkate alındı.
+- FN (False Negative) oranı düşürülmeye çalışıldı çünkü bu durum kalp hastalığını atlamaya yol açar.
+
+## 👩‍💻 Geliştirici
+
+
+**Elif Şevval Güler**  
+[LinkedIn](https://www.linkedin.com/in/elifglr)
