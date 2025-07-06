@@ -39,11 +39,6 @@ pip install -r requirements.txt
 jupyter notebook notebooks/heart_disease_classification_final.ipynb
 ```
 
-##  Sonuçlar
-
-- En iyi performans: Gradient Boosting (%85 Accuracy)
-- Aykırı değer analizi, dengesiz sınıflar, medikal doğruluk gibi konular dikkate alındı.
-- FN (False Negative) oranı düşürülmeye çalışıldı çünkü bu durum kalp hastalığını atlamaya yol açar.
 
 ## 👩‍💻 Geliştirici
 
